@@ -20,6 +20,6 @@
         android:id="@+id/buttonPrimary"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ir a PrimaryActivity"
+        android:text="Ir al Registro"
         android:layout_marginTop="20dp" />
 </LinearLayout>

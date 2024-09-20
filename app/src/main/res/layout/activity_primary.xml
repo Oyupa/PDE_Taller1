@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <!-- Campo de texto para el nombre de usuario -->
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingresa tu nombre"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textSize="18sp"/>
+
+    <!-- Botón para guardar el nombre -->
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar Nombre"
+        android:layout_marginTop="16dp" />
+
+    <!-- TextView para mostrar el nombre guardado -->
+    <TextView
+        android:id="@+id/textViewRegisteredName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre registrado:"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"/>
+
+    <!-- Botón para ir a la pantalla de configuración -->
+    <Button
+        android:id="@+id/buttonSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ir a la Configuración"
+        android:layout_marginTop="20dp" />
+</LinearLayout>
