@@ -38,5 +38,5 @@ Repositorio: https://github.com/Oyupa/PDE_Taller1
 
 ### 5. Crear la Settings Activity
 #### He creado la plantilla xml de la actividad y la clase `SettingsActivity` que extiende de `CompatActivity`.
-#### He implementado el método `onCreate` para mostrar los botones que permiten cambiar el color de fondo de la aplicación y he usado `SharedPreferences` para guardar el color de fondo. Aquí han surgido algunos problemas dado que pretendía usar una librería externa (colorpicker) para cambiar el color de fondo, pero al final he obtado por implementar un numero fijo de colores a los que el usuario pueda cambiar el fondo.
-#### Por último, he implementado el botón que lleva de vuelta a la Main Activity.
+#### He implementado el método `onCreate` para mostrar los botones que permiten cambiar el color de fondo de la aplicación y he usado `changeBackgroundColor()` para cambiar el color de fondo. Aquí han surgido algunos problemas dado que pretendía usar una librería externa (colorpicker) para cambiar el color de fondo, pero al final he obtado por implementar un numero fijo de colores a los que el usuario pueda cambiar el fondo.
+#### Por último, he implementado el botón que lleva de vuelta a la Main Activity. En ese momento me dí cuenta que el color de fondo no se compartía entre las actividades, por lo que he tenido que añadir `SharedPreferences` para guardar el color de fondo y poderlo cargar en el resto de actividades.
