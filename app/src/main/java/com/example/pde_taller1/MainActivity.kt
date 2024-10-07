@@ -22,8 +22,12 @@ class MainActivity : ComponentActivity() {
         val buttonPrimary = findViewById<Button>(R.id.buttonPrimary)
 
         // Cambiar el saludo según la hora del día
-        val saludo = obtenerSaludo()
-        saludoTextView.text = saludo
+        //val saludo = obtenerSaludo()
+        //saludoTextView.text = saludo
+        GreetingTask { greeting ->
+            // Actualizar la UI con el saludo personalizado
+            saludoTextView.text = greeting
+        }.execute()
 
         // Cargar el color de fondo guardado
         val savedColor = sharedPreferences.getInt("backgroundColor", ContextCompat.getColor(this, android.R.color.white))
